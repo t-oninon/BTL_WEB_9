@@ -1,0 +1,40 @@
+.inforDoctor {
+    margin: 105px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  body {
+    background-color: #f8f9fd;
+  }
+  .box {
+    height: 505px;
+    width: 255px;
+    margin-bottom: 39px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  .avt {
+    height: 300px;
+    width: 255px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+  }
+  .information p,
+  span,
+  h3 {
+    text-align: center;
+  }
+  .information {
+    width: 223px;
+    height: 133.2px;
+    margin: 15px auto;
+  }
+  p.colorgreen {
+    color: #00bd56;
+  }
+  p.graycolor {
+    color: #808080;
+  }
+  

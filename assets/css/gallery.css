@@ -1,0 +1,43 @@
+.inforanimal {
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-bottom: 30px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    justify-self: left;
+    flex-wrap: wrap;
+  }
+  body {
+    background-color: #f8f9fd;
+  }
+  img {
+    width: 350px;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 45px;
+    border-radius: 4px;
+  }
+  .page ul {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 107px;
+  }
+  .page a {
+    text-decoration: none;
+    color: #808080;
+  }
+  .page li {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #808080;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

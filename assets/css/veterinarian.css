@@ -1,40 +1,114 @@
-.inforDoctor {
-    margin: 105px auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  body {
-    background-color: #f8f9fd;
-  }
-  .box {
-    height: 505px;
-    width: 255px;
-    margin-bottom: 39px;
-    background-color: #ffffff;
+.staff-item {
+    background-color: #fff;
+    margin-bottom: 32px;
     border-radius: 4px;
-  }
-  .avt {
-    height: 300px;
-    width: 255px;
-    object-fit: cover;
-    border-radius: 4px 4px 0 0;
-  }
-  .information p,
-  span,
-  h3 {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.staff-item:hover .staff-info {
+    color: #fff;
+}
+
+.staff-item:hover .staff-introduce {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.staff-item:hover .staff-job {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.staff-item:hover {
+    background-color: var(--green-color);
+}
+
+.staff-item:hover .staff-img {
+    background-size: 105%;
+    background-position: top -4px center;
+}
+
+.staff-item:hover .staff-social {
+    visibility: visible;
+    animation: upSocial 0.3s ease-in forwards;
+}
+
+.staff-img {
+    position: relative;
+    height: 320px;
+    border-radius: 4px;
+    background-position: top center;
+    background-size: 100%;
+    transition: all 0.2s ease-in;
+}
+
+.staff-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.staff-social {
+    visibility: hidden;
+    margin-bottom: 12px;
+}
+
+@keyframes upSocial {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.staff-social a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#207dff 0%,#00bd55 100%);
+    color: #fff;
+    opacity: 0.8;
+    margin-right: 4px;
     text-align: center;
-  }
-  .information {
-    width: 223px;
-    height: 133.2px;
-    margin: 15px auto;
-  }
-  p.colorgreen {
-    color: #00bd56;
-  }
-  p.graycolor {
-    color: #808080;
-  }
-  
+}
+
+.staff-social a i {
+    font-size: 12px;
+}
+
+.staff-social a:hover {
+    opacity: 1;
+    box-shadow: 0 0 4px #fff;
+    position: relative;
+    top: -4px;
+}
+
+.staff-info {
+    text-align: center;
+    padding: 16px 16px 32px 16px;
+}
+
+.staff-info h3 {
+    font-size: 18px;
+}
+
+.staff-job {
+    color: var(--green-color);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+
+.staff-introduce {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    padding: 0 38px;
+}
+

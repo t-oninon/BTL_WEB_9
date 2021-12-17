@@ -1,43 +1,55 @@
-.inforanimal {
-    margin: 0 auto;
-    margin-top: 105px;
-    margin-bottom: 30px;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    justify-self: left;
-    flex-wrap: wrap;
-  }
-  body {
-    background-color: #f8f9fd;
-  }
-  img {
-    width: 350px;
+.gallery-item {
     height: 270px;
-    object-fit: cover;
-    margin-bottom: 45px;
+    position: relative;
     border-radius: 4px;
-  }
-  .page ul {
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0 auto;
-    margin-bottom: 107px;
-  }
-  .page a {
-    text-decoration: none;
-    color: #808080;
-  }
-  .page li {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px solid #808080;
-    margin-right: 6px;
+    transition: 3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-desc, 
+.gallery-item:hover .gallery-icon,
+.gallery-item:hover .ovelay {
+    visibility: visible;
+}
+  
+.gallery-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    background: var(--green-color);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0.8;
+    visibility: hidden;
+}
+
+.gallery-icon:hover {
+    opacity: 1;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.gallery-desc {
+    visibility: hidden;
+}
+
+.gallery-desc span {
+    color: rgba(255,255,255,.5);
+    margin-bottom: 4px;
+}
+  
+.gallery-desc p {
+    line-height: 1.2;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
   

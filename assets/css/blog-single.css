@@ -1,0 +1,246 @@
+/* Begin: Slidebar */
+.blog-slidebar {
+}
+
+.blog-slidebar > * {
+    margin-bottom: 48px;
+}
+
+.slidebar__title {
+    font-size: 22px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.slidebar__link {
+    color: #202020;
+}
+
+.slidebar__link:hover {
+    color: var(--green-color);
+}
+
+/* TODO: slidebar search */
+.slidebar__search .this {
+    position: relative;
+}
+
+.slidebar__search .this input {
+    width: 100%;
+    padding: 12px 14px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.slidebar__search .this a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    color: #505050;
+}
+
+.slidebar__search .this a:hover {
+    opacity: 0.7;
+}
+
+/* TODO Silder service list */
+.list__service ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__service li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.list__service li:first-child {
+    padding-top: 0;
+}
+
+.list__service li + li {
+    border-top: 1px solid #ccc;
+}
+
+.list__service li i {
+    color: #ccc;
+}
+/* TODO Silder recent list */
+.blog__recent-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.blog__recent-item .blog-img {
+    padding: 24px;
+    width: 100px;
+    height: 80px;
+    border-radius: 4px;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 24px;
+}
+
+.blog-text {    
+    font-size: 18px;
+}
+
+.blog-text .description {
+    font-size: 12px;
+    color: gray;
+    margin-top: 16px;
+}
+
+.blog-text .description > * {
+    margin-right: 8px;
+}
+
+/* TODO Tag cloud */
+.tag-cloud-link {
+    display: inline-block;
+    color: #505050;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    margin: 0 8px 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* TODO Paragraph */
+.blog-paragraph p {
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+}
+
+/* End: Slidebar */
+
+/* Begin: section */
+/* TODO: Blog */
+.blog-section ul {
+    list-style: none;
+}
+
+.section__title {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .8);
+    font-weight: 600;
+}
+
+.section__paragraph {
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+}
+
+/* TODO: Author introduction */
+.author-img img {
+    border-radius: 50%;
+}
+
+.author-info {
+    padding-left: 32px;
+}
+
+.author-info h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.8);
+    font-weight: 400;
+
+}
+
+.author-info p {
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+}
+
+.comment-body {
+    position: relative;
+    top: -50px;
+    left: 80px;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* TODO: Comment */
+.comment-body h3 {
+    font-size: 20px;
+}
+
+.comment-body .meta  {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #ccc;
+    padding: 12px 0;
+}
+
+.comment-body p {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+}
+
+.comment-body a {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 4px;
+    background-color: #e6e6e6;
+    color: #505050;
+    font-weight: 500;
+}
+
+.comment-body a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.comment-body a i {
+    margin-left: 10px;
+}
+
+/* TODO: Form-comment */
+label {
+    padding: 8px 0 16px 0;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray; 
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.send-comment {
+    margin-top: 24px;
+}
+
+@media (max-width: 375px) {
+    .send-comment {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog-slidebar {
+        padding-left: 48px;
+    }
+}
+
+/* End: section */

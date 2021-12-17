@@ -1,0 +1,141 @@
+/* sssssssssssssssssssssssssssss */
+
+.packages {
+    padding-bottom: 3rem;
+}
+.section__title {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.package-item {
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.package__img {
+    height: 250px;
+    
+}
+
+.block-1 .package__img {
+    background: center/cover url(../imgs/xpricing-1.jpg.pagespeed.ic.ds_JiaHbvg.webp);
+}
+.block-2 .package__img {
+    background: center/cover url(../imgs/xpricing-2.jpg.pagespeed.ic.CJVSu9OJIe.webp);
+}
+.block-3 .package__img {
+    background: center/cover url(../imgs/xpricing-3.jpg.pagespeed.ic.y2bpGLg45Z.webp);
+}
+
+.package__text {
+    text-align: center;
+}
+
+.item__title {
+    color: var(--green-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item_price {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.item_price sup {
+    font-size: 24px;
+    top: -1em;
+    color: #b3b3b3;
+}
+
+.item_price sub {
+    font-size: 12px;
+    color: #3f3f3f;
+    transform: translateX(100px);
+}
+
+.item__list {
+    list-style: none;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+.item__list li {
+    padding: 12px 0;
+}
+
+.item__list li:nth-child(odd) { 
+    background: rgba(0,0,0,.05);
+}
+
+.item__list i {
+    color: #207dff;
+    margin-right: 8px;
+}
+
+.item__btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    background-color: var(--green-color);
+    color: #fff;
+    font-style: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.item__btn:hover {
+    opacity: 0.7;
+}
+
+.consultation {
+    background: center/cover no-repeat url(../imgs/xbg_3.jpg.pagespeed.ic.JTtsPMnvzp.webp);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: linear-gradient(45deg,#207dff 0%,#00bd55 100%);
+    z-index: 0;
+}
+
+.consultation .content {
+    position: relative;
+    z-index: 1;
+    padding-left: 48px;
+}
+
+/* sssssssssssssssssssssssssssss */
+.form-group {
+    position: relative;
+    padding: 8px 0;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 12px;
+    color: #505050;
+}
+
+.form-group .form-control {
+    color: #505050;
+    padding: 10px 16px;
+}
+
+.form-group .btn {
+    width: 100%;
+}

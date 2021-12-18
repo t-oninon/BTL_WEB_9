@@ -14,8 +14,7 @@ html {
 }
 
 .upContent {
-  display: none;
-  animation: upContent 0.2s ease-in;
+    animation: upContent 0.2s ease-in;
 }
 
 @keyframes upContent {

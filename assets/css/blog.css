@@ -1,4 +1,5 @@
 /* BEGIN: BLOG */
+
 .blog-item {
     background-color: #fff;
     margin-bottom: 36px;
@@ -20,7 +21,7 @@
     letter-spacing: 0.5px;
 }
 
-.blog__title > * {
+.blog__title>* {
     margin-right: 12px;
 }
 
@@ -39,5 +40,6 @@
 .blog__link:hover {
     color: var(--green-color);
 }
+
 
 /* END: BLOG */

@@ -1,11 +1,12 @@
 #banner-home {
-    height: 747px;
+    height: 714px;
     background: url(../imgs/xbg_1.jpg.pagespeed.ic.9Lcatm9Xkb.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    background-attachment: fixed;
     position: relative;
-    position: inherit;
+
 }
 
 #banner-home .slider-text {
@@ -92,6 +93,10 @@ h1 {
     }
 }
 
+/* BEGIN: services */
+.block-1 {
+    padding-bottom: 105px;
+}
 .services {
     display: block;
     width: 100%;
@@ -129,6 +134,7 @@ h1 {
 
 .services .media-body {
     margin-top: 40px;
+    padding: 28px;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -202,9 +208,13 @@ h1 {
         margin-bottom: 30px;
     }
 }
+/* End: services */
 
+/* sevice-2 */
 .img-video {
+    background-size: cover;
     background-position: center center;
+    position: relative;
 }
 
 @media (max-width: 767.98px) {
@@ -229,6 +239,7 @@ h1 {
         font-size: 28px;
     }
 }
+
 
 .services-2 {
     width: 100%;
@@ -471,12 +482,48 @@ h1 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
 }
 
 .icon-video span {
     font-size: 20px;
-    color: #00bd56
+    color: #00bd56;
+    
+}
+
+.hover_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;   
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00bd56;
+    z-index: 1;
+}
+
+.img-video:hover .hover_play {
+    animation: thanh 2s ease-in 1s infinite forwards;
+}
+
+@keyframes thanh
+{
+    0% { 
+        opacity: .6;
+    }
+    30% {
+        opacity: 0;
+        width: 140px;
+        height: 140px;
+    }
+    100% {
+        opacity: 0;
+        width: 140px;
+        height: 140px;
+    }
 }
 
 .ftco-faqs .img {
@@ -519,6 +566,7 @@ h1 {
 }
 
 .ftco-faqs .myaccordion .btn {
+    text-decoration: none;
     width: 100%;
     font-weight: 600;
     color: #000;

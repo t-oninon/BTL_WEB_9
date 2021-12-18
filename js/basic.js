@@ -1,12 +1,11 @@
-const navs = document.querySelectorAll('.nav-item');
+const chooses = document.querySelectorAll('.choose__item');
 
-let haha = 0;
-for (let i = 0; i < navs.length; i++) {
-    navs[i].onclick = function() {
-        for (nav of navs) {
-            nav.classList.remove('active'); 
+for (let i = 0; i < chooses.length; i++) {
+    chooses[i].onclick = function() {
+        for (choose of chooses) {
+            choose.classList.remove('it'); 
         }
-        navs[i].classList.add('active');
+        chooses[i].classList.add('it');
     };
 }
 

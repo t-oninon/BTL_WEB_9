@@ -505,7 +505,7 @@ h1 {
 }
 
 .img-video:hover .hover_play {
-    animation: thanh 2s ease-in 1s infinite forwards;
+    animation: thanh 1.5s ease-in 0.5s infinite forwards;
 }
 
 @keyframes thanh
@@ -513,7 +513,7 @@ h1 {
     0% { 
         opacity: .6;
     }
-    30% {
+    40% {
         opacity: 0;
         width: 140px;
         height: 140px;
@@ -582,7 +582,8 @@ h1 {
 
 .ftco-faqs .myaccordion .btn-link:hover,
 .ftco-faqs .myaccordion .btn-link:focus {
-    text-decoration: none
+    text-decoration: none;
+    opacity: 0.6;
 }
 
 .ftco-faqs [data-toggle="collapse"] .fa:before {
@@ -733,3 +734,130 @@ h1 {
 .accordion .card .card-header {
     margin-bottom: -1px
 }
+
+/* Begin: feedback */
+.feedback {
+    position: relative;
+    background: center center/cover url('../imgs/xbg_2.jpg.pagespeed.ic.pOHEUHIx4g.webp');
+    background-attachment: fixed;
+}
+
+.conten_main {
+    overflow: hidden;
+}
+
+.feedback__list {
+    width: 200%;
+    flex-wrap: nowrap! important;
+    overflow: hidden;
+    padding: 32px 0;
+    margin: 0;
+}
+
+.feedback__list input {
+    display: none;
+}
+
+.feedback__item {
+    width: 16.66667%;
+    transition: all 0.4s ease;
+}
+
+.feedback__item > div {
+    position: relative;
+    padding: 32px 24px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.feedback__icon {
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.feedback__text {
+
+}
+
+.feedback__desc {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    padding-bottom: 12px;
+}
+
+.feedback__client {
+    display: flex;
+    align-items: center;
+}
+
+.client__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.client__infor {
+    padding-left: 32px;
+}
+
+.choose__list {
+    display: flex;
+    padding: 24px;
+}
+
+.choose__item {
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.choose__item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.it {
+    background-color: var(--green-color);
+}
+
+
+#radio2:checked ~ .feedback1 {
+    margin-left: -16.66667%;
+}
+
+#radio3:checked ~ .feedback1 {
+    margin-left: -33.33333%;
+}
+
+#radio4:checked ~ .feedback1 {
+    margin-left: -50%;
+}
+
+@media (max-width: 767px) {
+    .respon__pass {
+        display: none;
+    }
+
+    .feedback__list {
+        width: 600%;
+    }
+    
+    .feedback__item {
+        padding: 0;
+    }
+}
+
+
+
+/* End: feedback */

@@ -27,12 +27,12 @@ const a = document.querySelector('.header__nav');
 
 
 
-const lazyLoads = document.querySelectorAll('.upContent');
+// const lazyLoads = document.querySelectorAll('.upContent');
 
 
 
-window.onscroll = function() {
-    for (item of lazyLoads) {
-        item.style.display = 'block ';
-    }
-};
+// window.onscroll = function() {
+//     for (item of lazyLoads) {
+//         item.style.display = 'block ';
+//     }
+// };

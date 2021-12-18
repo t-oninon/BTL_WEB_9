@@ -22,5 +22,18 @@ menu.addEventListener('click', () => {
         isclose = true;
     }
 });
+
 const a = document.querySelector('.header__nav');
 // a.style.display = 'none';
+
+
+
+const lazyLoads = document.querySelectorAll('.upContent');
+
+
+
+window.onscroll = function() {
+    for (item of lazyLoads) {
+        item.style.display = 'block ';
+    }
+};

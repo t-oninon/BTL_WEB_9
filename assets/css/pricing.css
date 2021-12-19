@@ -101,6 +101,11 @@
     position: relative;
 }
 
+.content {
+    z-index: 1;
+    padding-left: 38px;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -111,10 +116,14 @@
     z-index: 0;
 }
 
-.consultation .content {
-    position: relative;
-    z-index: 1;
-    padding-left: 48px;
+@media (max-width: 960px) {
+    .overlay {
+        width: 100%;
+    }
+
+    .content {
+        padding-left: 0;
+    }
 }
 
 /* sssssssssssssssssssssssssssss */

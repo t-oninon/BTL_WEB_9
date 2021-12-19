@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/basic.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
-    <link rel="stylesheet" href="./assets/css/pricing.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/pricing.css">
     <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
+
     <title>Pet Sitting</title>
 </head>
 
@@ -84,7 +86,7 @@
             </div>
 
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-                <div class="char col-md-11 ftco-animate text-center">
+                <div class="char col-md-11 ftco-animate text-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
                     <h1 class="mb-4"> <strong>Highest Quality Care For Pets You'll Love</strong> </h1>
                     <p>
                         <a href="#" class="btn btn-primary mr-md-4 py-3 px-4"> <strong>Learn more</strong> </a>
@@ -98,7 +100,7 @@
 
     <!-- Begin: Active -->
     <section class="ftco-section bg-light ftco-no-pt ftco-intro block-1">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
             <div class="row">
                 <div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
                     <div class="d-block services active text-center">
@@ -142,7 +144,8 @@
     <!-- End: Active -->
 
     <!-- Begin Choose -->
-    <div class="ftco-section ftco-no-pt ftco-no-pb">
+
+    <div class="ftco-section ftco-no-pt ftco-no-pb ">
         <div class="container">
             <div class="row d-flex no-gutters">
                 <div class="col-md-5 d-flex">
@@ -239,7 +242,7 @@
     <!-- End counter -->
 
     <section class="ftco-section bg-light ftco-faqs">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
             <div class="row">
                 <div class="col-lg-6 order-md-last">
                     <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(./assets/imgs/xabout.jpg.pagespeed.ic.Khnw0EA7-b.webp)">
@@ -344,7 +347,7 @@
     </section>
 
     <!-- Begin: Content -->
-    <div class="packages bg-light upContent">
+    <div class="packages bg-light upContent" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -412,7 +415,7 @@
     </div>
 
     <!-- Begin: section  -->
-    <div class="content">
+    <div class="content" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
         <div class="Gallery">
             <div class="container">
                 <div class="row justify-content-center pb-5 mb-3">
@@ -505,7 +508,7 @@
     <!-- End: section -->
 
     <!-- Begin: Blog -->
-    <div class="blog">
+    <div class="blog" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
         <div class="container upContent">
             <div class="row justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
@@ -569,7 +572,7 @@
 
     <div class="consultation">
         <div class="overlay"></div>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
             <div class="row d-md-flex justify-content-end">
                 <div class="col-md-12 content col-lg-6 half py-5 pl-lg-5">
                     <h2 class="mb-4">Free Consultation</h2>
@@ -635,7 +638,7 @@
     <!-- End: Content -->
     <!-- Begin: footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
             <div class="row">
                 <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
                     <h2 class="footer-heading">Petsitting</h2>
@@ -700,7 +703,10 @@
     </footer>
     <!-- End: footer -->
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/basic.js"></script>
 </body>

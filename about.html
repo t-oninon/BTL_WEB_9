@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/pricing.css">
     <link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pet Sitting</title>
 </head>
 
@@ -182,7 +183,7 @@
     <!-- End counter -->
     <div class="consultation">
         <div class="overlay"></div>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
             <div class="row d-md-flex justify-content-end">
                 <div class="col-md-12 content col-lg-6 half py-5 pl-lg-5">
                     <h2 class="mb-4">Free Consultation</h2>
@@ -313,7 +314,10 @@
     </footer>
     <!-- End: footer -->
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/basic.js"></script>
 </body>

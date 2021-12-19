@@ -101,6 +101,10 @@
     position: relative;
 }
 
+.consultation-content {
+    z-index: 1;
+}
+
 .overlay {
     position: absolute;
     top: 0;

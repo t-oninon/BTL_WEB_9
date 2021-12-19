@@ -101,8 +101,9 @@
     position: relative;
 }
 
-.consultation-content {
+.content {
     z-index: 1;
+    padding-left: 38px;
 }
 
 .overlay {
@@ -118,6 +119,10 @@
 @media (max-width: 960px) {
     .overlay {
         width: 100%;
+    }
+
+    .content {
+        padding-left: 0;
     }
 }
 

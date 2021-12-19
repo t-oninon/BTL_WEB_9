@@ -26,6 +26,10 @@ html {
   }
 }
 
+.bg-light {
+  background-color: #ccc!important;
+}
+
 .ovelay {
   position: absolute;
   top: 0;

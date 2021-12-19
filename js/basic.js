@@ -36,3 +36,26 @@ const a = document.querySelector('.header__nav');
 //         item.style.display = 'block ';
 //     }
 // };
+
+const counters = document.querySelectorAll('.number');
+
+counters.forEach((counter) => {
+
+let upNumber = 0;
+    const updateCounter = () => {
+        const target = +counter.getAttribute('data-number');
+        const increment = target / 200;
+        if (upNumber < target) {
+            upNumber += increment;
+            counter.innerText = `${Math.ceil(upNumber)}`;
+            setTimeout(updateCounter, 1);
+        } 
+        else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+
+})
+

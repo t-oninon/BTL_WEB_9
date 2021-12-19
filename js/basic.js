@@ -37,14 +37,15 @@ const a = document.querySelector('.header__nav');
 //     }
 // };
 
-const counters = document.querySelectorAll('.number');
+document.addEventListener('aos:in', ({ detail }) => {
+    const counters = document.querySelectorAll('.number');
 
 counters.forEach((counter) => {
 
 let upNumber = 0;
     const updateCounter = () => {
         const target = +counter.getAttribute('data-number');
-        const increment = target / 200;
+        const increment = target / 600;
         if (upNumber < target) {
             upNumber += increment;
             counter.innerText = `${Math.ceil(upNumber)}`;
@@ -58,4 +59,13 @@ let upNumber = 0;
     updateCounter();
 
 })
+});
+
+
+
+AOS.init({
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    once: true, // whether animation should happen only once - while scrolling down
+});
 

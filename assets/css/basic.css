@@ -73,12 +73,18 @@ html {
   font-size: 12px;
 }
 
+
 .header__connect {
   height: 40px;
 }
 
 .header__connect > a {
   margin-right: 8px;
+}
+
+.header__connect > a:hover {
+  color: #000;
+  font-weight: bold;
 }
 
 .header__connect .icon {
@@ -169,7 +175,6 @@ html {
   color: var(--green-color) !important;
   border-bottom: 3px solid var(--green-color) !important;
 }
-
 /* END HEADER */
 
 /* BEGIN FOOTER */

@@ -748,14 +748,16 @@ h1 {
 
 .conten_main {
     overflow: hidden;
+    position: relative;
+    padding-bottom: 62px;
 }
 
 .feedback__list {
     width: 200%;
     flex-wrap: nowrap! important;
-    overflow: hidden;
     padding: 32px 0;
     margin: 0;
+
 }
 
 .feedback__list input {
@@ -764,7 +766,7 @@ h1 {
 
 .feedback__item {
     width: 16.66667%;
-    transition: all 0.4s ease;
+    transition: 0.5s;
 }
 
 .feedback__item > div {
@@ -774,44 +776,9 @@ h1 {
     background-color: #fff;
 }
 
-.feedback__icon {
+.navigation_manual {
     position: absolute;
-    top: -20px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--green-color);
-    color: #fff;
-    border-radius: 50%;
-}
-
-.feedback__text {
-
-}
-
-.feedback__desc {
-    font-size: 15px;
-    line-height: 1.8;
-    font-weight: 400;
-    color: gray;
-    padding-bottom: 12px;
-}
-
-.feedback__client {
-    display: flex;
-    align-items: center;
-}
-
-.client__img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-.client__infor {
-    padding-left: 32px;
+    bottom: 0;
 }
 
 .choose__list {
@@ -824,17 +791,27 @@ h1 {
     border-radius: 50%;
     border: 2px solid #000;
     background-color: #fff;
+    transition: 0.8s;
     cursor: pointer;
 }
 
 .choose__item:not(:first-child) {
     margin-left: 20px;
 }
+.choose__item:hover {
+    background-color: rgba(0, 189, 85, 0.3);
+}
 
-.it {
+#radio1:checked ~ .navigation_manual .it1,
+#radio2:checked ~ .navigation_manual .it2,
+#radio3:checked ~ .navigation_manual .it3,
+#radio4:checked ~ .navigation_manual .it4 {
     background-color: var(--green-color);
 }
 
+#radio1:checked ~ .feedback1 {
+    margin-left: 0;
+}
 
 #radio2:checked ~ .feedback1 {
     margin-left: -16.66667%;
@@ -860,6 +837,42 @@ h1 {
     .feedback__item {
         padding: 0;
     }
+}
+
+.feedback__icon {
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.feedback__desc {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    padding-bottom: 12px;
+}
+
+.feedback__client {
+    display: flex;
+    align-items: center;
+}
+
+.client__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.client__infor {
+    padding-left: 32px;
 }
 
 

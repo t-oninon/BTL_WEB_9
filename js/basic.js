@@ -1,14 +1,25 @@
 // Create active for list feedback
-const chooses = document.querySelectorAll(".choose__item");
+// const chooses = document.querySelectorAll(".choose__item");
 
-for (let i = 0; i < chooses.length; i++) {
-  chooses[i].onclick = function () {
-    for (choose of chooses) {
-      choose.classList.remove("it");
-    }
-    chooses[i].classList.add("it");
-  };
-}
+// for (let i = 0; i < chooses.length; i++) {
+//   chooses[i].onclick = function () {
+//     for (choose of chooses) {
+//       choose.classList.remove("it");
+//     }
+//     chooses[i].classList.add("it");
+//   };
+// }
+
+// feedback aoto play
+var radioIndex = 1;
+document.getElementById('radio' + radioIndex).checked = true;
+
+setInterval(function () {
+  document.getElementById('radio' + radioIndex).checked = true;
+   radioIndex++;
+   if (radioIndex > 4)
+    radioIndex = 1;
+}, 2000);
 
 // Respondsive for menu
 const menu = document.querySelector(".header__menu");
@@ -31,7 +42,7 @@ document.addEventListener("aos:in", ({ detail }) => {
     let upNumber = 0;
     const updateCounter = () => {
       const target = +counter.getAttribute("data-number");
-      const increment = target / 600;
+      const increment = target / 350; /// 350 is time 
       if (upNumber < target) {
         upNumber += increment;
         counter.innerText = `${Math.ceil(upNumber)}`;
@@ -40,7 +51,6 @@ document.addEventListener("aos:in", ({ detail }) => {
         counter.innerText = target;
       }
     };
-
     updateCounter();
   });
 });

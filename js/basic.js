@@ -9,17 +9,17 @@
 //     chooses[i].classList.add("it");
 //   };
 // }
+// Value init for animation
+AOS.init({
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  once: true, // whether animation should happen only once - while scrolling down
+});
 
-// feedback aoto play
-var radioIndex = 1;
-document.getElementById('radio' + radioIndex).checked = true;
+function res() {
+    window.location = "https://pets.webmd.com/dogs/feeding-time#1";
+}
 
-setInterval(function () {
-  document.getElementById('radio' + radioIndex).checked = true;
-   radioIndex++;
-   if (radioIndex > 4)
-    radioIndex = 1;
-}, 2000);
 
 // Respondsive for menu
 const menu = document.querySelector(".header__menu");
@@ -55,13 +55,15 @@ document.addEventListener("aos:in", ({ detail }) => {
   });
 });
 
-// Value init for animation
-AOS.init({
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  once: true, // whether animation should happen only once - while scrolling down
-});
+// feedback aoto play
+var radioIndex = 1;
+document.getElementById('radio' + radioIndex).checked = true;
 
-function res() {
-    window.location = "https://pets.webmd.com/dogs/feeding-time#1";
-}
+setInterval(function () {
+  document.getElementById('radio' + radioIndex).checked = true;
+   radioIndex++;
+   if (radioIndex > 4)
+    radioIndex = 1;
+}, 2000);
+
+

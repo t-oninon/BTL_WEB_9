@@ -111,6 +111,12 @@
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.tag-cloud-link:hover {
+    background-color: var(--green-color);
+    border: none;
+    color: #fff;
+}
 /* TODO Paragraph */
 .blog-paragraph p {
     line-height: 1.8;

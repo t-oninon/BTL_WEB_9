@@ -390,7 +390,9 @@ html {
 .list-unstyled a:hover {
   color: var(--green-color)!important;
   font-weight: bold;
+  text-transform: uppercase;
 }
+
 /* END FOOTER */
 
 /* BEGIN BANNER */

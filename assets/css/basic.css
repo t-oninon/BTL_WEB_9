@@ -131,6 +131,10 @@ html {
   margin-right: 10px;
 }
 
+.header__menu:hover {
+  cursor: pointer;
+}
+
 .respon-menu {
   font-size: 18px;
   font-weight: 200;

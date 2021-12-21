@@ -42,7 +42,7 @@ document.addEventListener("aos:in", ({ detail }) => {
     let upNumber = 0;
     const updateCounter = () => {
       const target = +counter.getAttribute("data-number");
-      const increment = target / 350; /// 350 is time 
+      const increment = target / 800; /// 800 is time 
       if (upNumber < target) {
         upNumber += increment;
         counter.innerText = `${Math.ceil(upNumber)}`;
@@ -64,6 +64,6 @@ setInterval(function () {
    radioIndex++;
    if (radioIndex > 4)
     radioIndex = 1;
-}, 2000);
+}, 5000);
 
 
